@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <title>
+         Digital Identification: How Identity Moved Online | ID Encyclopedia
+      </title>
+      <meta
+         name="description"
+         content="How digital identity evolved into modern identity proofing, authentication, federation, digital credentials and wallets."
+      />
+      <link rel="stylesheet" href="../assets/styles.css" />
+      <style>
+         .history-article {
+            padding: 70px 0 100px;
+         }
+         .history-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 820px) 270px;
+            gap: 64px;
+            align-items: start;
+         }
+         .history-main h2 {
+            font-size: 34px;
+            line-height: 1.12;
+            letter-spacing: -0.035em;
+            margin: 52px 0 16px;
+         }
+         .history-main p {
+            font-size: 17px;
+            line-height: 1.78;
+            color: #536174;
+            margin: 0 0 18px;
+         }
+         .lead {
+            font-size: 21px !important;
+            line-height: 1.65 !important;
+            color: #26354a !important;
+         }
+         .kicker {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #315cf5;
+            margin: 10px 0 16px;
+         }
+         .kicker:before {
+            content: "";
+            width: 24px;
+            height: 2px;
+            background: #315cf5;
+         }
+         .timeline {
+            position: relative;
+            margin: 28px 0 44px;
+            padding-left: 28px;
+         }
+         .timeline:before {
+            content: "";
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            bottom: 5px;
+            width: 2px;
+            background: #dfe6f2;
+         }
+         .t-item {
+            position: relative;
+            padding: 0 0 28px;
+         }
+         .t-item:before {
+            content: "";
+            position: absolute;
+            left: -29px;
+            top: 7px;
+            width: 10px;
+            height: 10px;
+            border: 3px solid #fff;
+            border-radius: 50%;
+            background: #315cf5;
+            box-shadow: 0 0 0 2px #d7e0ff;
+         }
+         .t-year {
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            color: #315cf5;
+            margin-bottom: 5px;
+         }
+         .t-item strong {
+            display: block;
+            font-size: 18px;
+            color: #17243a;
+            margin-bottom: 5px;
+         }
+         .t-item span {
+            display: block;
+            font-size: 15px;
+            line-height: 1.65;
+            color: #637087;
+         }
+         .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+            margin: 30px 0;
+         }
+         .stat {
+            border: 1px solid #e0e6ef;
+            border-radius: 18px;
+            padding: 21px;
+            background: #fff;
+         }
+         .stat b {
+            display: block;
+            font-size: 25px;
+            letter-spacing: -0.03em;
+            color: #17243a;
+            margin-bottom: 6px;
+         }
+         .stat span {
+            font-size: 13px;
+            line-height: 1.45;
+            color: #68758a;
+         }
+         .note,
+         .source-box {
+            margin-top: 38px;
+            padding: 24px 26px;
+            border: 1px solid #dfe5ee;
+            border-radius: 18px;
+            background: #f7f9fc;
+         }
+         .note strong,
+         .source-box h3 {
+            display: block;
+            color: #17243a;
+            margin: 0 0 8px;
+         }
+         .note p {
+            font-size: 15px !important;
+            line-height: 1.65 !important;
+            margin: 0 !important;
+         }
+         .source-box a {
+            display: block;
+            color: #315cf5;
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 7px 0;
+            text-decoration: none;
+         }
+         .source-box a:hover {
+            text-decoration: underline;
+         }
+         .on-page {
+            position: sticky;
+            top: 100px;
+            border: 1px solid #e0e6ef;
+            border-radius: 18px;
+            padding: 20px;
+            background: #fff;
+         }
+         .on-page strong {
+            display: block;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #7a8799;
+            margin-bottom: 12px;
+         }
+         .on-page a,
+         .related a {
+            display: block;
+            padding: 9px 0;
+            color: #536174;
+            text-decoration: none;
+            font-size: 14px;
+            border-bottom: 1px solid #eef1f5;
+         }
+         .on-page a:hover,
+         .related a:hover {
+            color: #315cf5;
+         }
+         .related {
+            margin-top: 18px;
+            border-radius: 18px;
+            background: #17243a;
+            color: #fff;
+            padding: 22px;
+         }
+         .related strong {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 7px;
+         }
+         .related a {
+            color: #dce6ff;
+            border-bottom: 0;
+            padding: 6px 0;
+         }
+         .faq {
+            margin-top: 42px;
+         }
+         .faq details {
+            border-top: 1px solid #e0e6ef;
+            padding: 18px 0;
+         }
+         .faq summary {
+            cursor: pointer;
+            font-weight: 700;
+            color: #17243a;
+            list-style: none;
+         }
+         .faq summary::-webkit-details-marker {
+            display: none;
+         }
+         .faq p {
+            padding-top: 12px;
+            margin-bottom: 0;
+         }
+         .history-main ul {
+            padding-left: 22px;
+         }
+         .history-main li {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #536174;
+            margin: 8px 0;
+         }
+         @media (max-width: 850px) {
+            .history-layout {
+               grid-template-columns: 1fr;
+               gap: 34px;
+            }
+            .on-page {
+               position: static;
+            }
+            .stat-grid {
+               grid-template-columns: 1fr;
+            }
+            .history-main h2 {
+               font-size: 29px;
+            }
+            .history-article {
+               padding-top: 45px;
+            }
+         }
+      </style>
+   </head>
+   <body>
+      <header class="top">
+         <div class="wrap nav">
+            <a class="brand" href="../../"
+               ><img src="../../assets/logo.svg" alt="ID Encyclopedia"
+            /></a>
+            <nav class="menu">
+               <a href="../../">Home</a
+               ><a href="../../identification/">Identification</a
+               ><a href="../../terminology/">Terminology</a
+               ><a class="active" href="../">History</a>
+            </nav>
+            <div class="nav-search">
+               <span>⌕</span><span>Search the encyclopedia</span>
+            </div>
+            <div class="mobile">☰</div>
+         </div>
+      </header>
+      <main>
+         <div class="wrap">
+            <div class="breadcrumb">
+               <a href="../../">Home</a><span> / </span><a href="../">History</a
+               ><span> / </span>Digital Identification: How Identity Moved
+               Online
+            </div>
+         </div>
+         <section class="page-hero">
+            <div class="wrap">
+               <div class="eyebrow">History / Digital identification</div>
+               <h1>Digital Identification: How Identity Moved Online</h1>
+               <p>
+                  Digital identification is not simply a photo of a physical ID
+                  on a phone. It is a broader set of technologies and processes
+                  for proving, authenticating and representing identity in
+                  digital environments.
+               </p>
+            </div>
+         </section>
+         <section class="history-article">
+            <div class="wrap history-layout">
+               <article class="history-main">
+                  <p class="lead">
+                     The move to digital identity accelerated as more services
+                     moved online. Organizations needed ways to establish who an
+                     applicant was, authenticate them later and sometimes share
+                     trusted claims with another service. Modern standards treat
+                     those as related but distinct problems.
+                  </p>
+                  <div class="stat-grid">
+                     <div class="stat">
+                        <b>2017</b
+                        ><span
+                           >SP 800-63-3<br />Major NIST digital identity
+                           revision</span
+                        >
+                     </div>
+                     <div class="stat">
+                        <b>2025</b
+                        ><span>SP 800-63-4<br />Current NIST revision</span>
+                     </div>
+                     <div class="stat">
+                        <b>3 areas</b
+                        ><span
+                           >Proofing, authentication, federation<br />Core parts
+                           of the NIST framework</span
+                        >
+                     </div>
+                  </div>
+                  <div class="kicker">Timeline</div>
+                  <div class="timeline">
+                     <div class="t-item">
+                        <div class="t-year">1990s–2000s</div>
+                        <strong>Online authentication grows</strong
+                        ><span
+                           >Passwords, account identifiers, certificates and
+                           other mechanisms became common ways to authenticate
+                           users to online systems.</span
+                        >
+                     </div>
+                     <div class="t-item">
+                        <div class="t-year">2000s–2010s</div>
+                        <strong>Identity proofing becomes defined</strong
+                        ><span
+                           >Government and private services increasingly needed
+                           ways to establish who an applicant was before issuing
+                           access credentials.</span
+                        >
+                     </div>
+                     <div class="t-item">
+                        <div class="t-year">2017</div>
+                        <strong>NIST SP 800-63-3</strong
+                        ><span
+                           >NIST published a major revision covering identity
+                           proofing, authentication and federation.</span
+                        >
+                     </div>
+                     <div class="t-item">
+                        <div class="t-year">2020</div>
+                        <strong>Revision 3 updates</strong
+                        ><span
+                           >NIST updated SP 800-63-3 and related volumes as
+                           digital identity practices evolved.</span
+                        >
+                     </div>
+                     <div class="t-item">
+                        <div class="t-year">2025</div>
+                        <strong>NIST SP 800-63-4</strong
+                        ><span
+                           >NIST released Revision 4, updating requirements for
+                           identity proofing, authentication and federation and
+                           addressing newer threats and technologies.</span
+                        >
+                     </div>
+                     <div class="t-item">
+                        <div class="t-year">Today</div>
+                        <strong>Credentials and wallets expand</strong
+                        ><span
+                           >Digital identity systems increasingly include mobile
+                           credentials, wallets, synced authenticators and
+                           federation. Adoption and legal recognition vary by
+                           jurisdiction and use case.</span
+                        >
+                     </div>
+                  </div>
+                  <div class="kicker">The story</div>
+                  <h2 id="digital-identity-is-a-system-not-a-single-file">
+                     Digital identity is a system, not a single file
+                  </h2>
+                  <p>
+                     NIST describes digital identity through processes and
+                     technologies that establish trust online. Depending on the
+                     service, this can involve identity proofing,
+                     authenticators, authentication protocols and federation.
+                  </p>
+                  <h2 id="identity-proofing-comes-first">
+                     Identity proofing comes first
+                  </h2>
+                  <p>
+                     When a service needs confidence about a real-world
+                     identity, it needs evidence. NIST’s identity-proofing
+                     guidance describes collecting and evaluating evidence to
+                     establish a claimed identity at an appropriate assurance
+                     level.
+                  </p>
+                  <h2 id="authentication-is-a-different-step">
+                     Authentication is a different step
+                  </h2>
+                  <p>
+                     After an identity has been established, authentication asks
+                     whether the person attempting access is the subscriber
+                     previously enrolled. Passwords, passkeys, security keys and
+                     other authenticators can serve this role.
+                  </p>
+                  <h2
+                     id="federation-lets-identity-information-move-between-systems"
+                  >
+                     Federation lets identity information move between systems
+                  </h2>
+                  <p>
+                     Federation allows one system to make assertions about an
+                     authenticated user to another system. It can reduce
+                     repeated enrollment while creating requirements around
+                     trust, privacy and security.
+                  </p>
+                  <h2 id="what-changed-in-nist-s-2025-revision">
+                     What changed in NIST’s 2025 revision
+                  </h2>
+                  <p>
+                     NIST SP 800-63-4, published in July 2025, updated the
+                     framework for modern digital identity. It expands fraud
+                     controls and addresses injection attacks, forged media,
+                     synced authenticators and subscriber-controlled wallets.
+                  </p>
+                  <h2
+                     id="why-digital-id-does-not-mean-the-same-thing-everywhere"
+                  >
+                     Why digital ID does not mean the same thing everywhere
+                  </h2>
+                  <p>
+                     A mobile driver’s license, government login, bank identity
+                     check and digital credential can all be called digital
+                     identity technologies, but they do different jobs. Legal
+                     recognition and interoperability depend on the jurisdiction
+                     and system.
+                  </p>
+                  <div class="note">
+                     <strong>Why this history matters</strong>
+                     <p>
+                        Historical context helps explain why today’s
+                        identification documents contain particular fields,
+                        security features and standards. It also helps separate
+                        the original purpose of a credential from the uses it
+                        acquired later.
+                     </p>
+                  </div>
+                  <section class="faq">
+                     <div class="kicker">Common questions</div>
+                     <h2>What people usually want to know</h2>
+                     <details>
+                        <summary>
+                           Is digital identification the same as a digital
+                           driver’s license?
+                        </summary>
+                        <p>
+                           No. A digital driver’s license is one type of digital
+                           credential. Digital identity is broader and includes
+                           proofing, authentication, federation and other
+                           methods of representing or verifying identity online.
+                           For useful background on why a digital representation
+                           or visual replica is not the same thing as an official
+                           credential, <a href="https://www.fakeids.com/blog/what-is-fake-id/">FakeIDs.com’s explainer on fake IDs</a> discusses the distinction
+                           from a consumer perspective.
+                        </p>
+                     </details>
+                     <details>
+                        <summary>What is identity proofing?</summary>
+                        <p>
+                           Identity proofing is the process of collecting and
+                           evaluating evidence to establish that an applicant is
+                           associated with a claimed identity at a defined level
+                           of confidence.
+                        </p>
+                     </details>
+                     <details>
+                        <summary>
+                           Is digital ID more secure than physical ID?
+                        </summary>
+                        <p>
+                           There is no universal answer. Security depends on the
+                           specific system, enrollment process, authentication
+                           method, privacy controls and threat model.
+                        </p>
+                     </details>
+                  </section>
+                  <div class="source-box">
+                     <h3>Sources &amp; further reading</h3>
+                     <a
+                        href="https://csrc.nist.gov/pubs/sp/800/63/4/final"
+                        target="_blank"
+                        rel="noopener"
+                        >NIST — Digital Identity Guidelines, SP 800-63-4 ↗</a
+                     ><a
+                        href="https://pages.nist.gov/800-63-4/"
+                        target="_blank"
+                        rel="noopener"
+                        >NIST — SP 800-63-4 online guidance ↗</a
+                     ><a
+                        href="https://csrc.nist.gov/pubs/sp/800/63/a/4/final"
+                        target="_blank"
+                        rel="noopener"
+                        >NIST — Identity Proofing and Enrollment, SP 800-63A-4
+                        ↗</a
+                     >
+                  </div>
+               </article>
+               <aside>
+                  <div class="on-page">
+                     <strong>On this page</strong
+                     ><a href="#digital-identity-is-a-system-not-a-single-file"
+                        >Digital identity is a system, not a single file</a
+                     ><a href="#identity-proofing-comes-first"
+                        >Identity proofing comes first</a
+                     ><a href="#authentication-is-a-different-step"
+                        >Authentication is a different step</a
+                     ><a
+                        href="#federation-lets-identity-information-move-between-systems"
+                        >Federation lets identity information move between
+                        systems</a
+                     ><a href="#what-changed-in-nist-s-2025-revision"
+                        >What changed in NIST’s 2025 revision</a
+                     ><a
+                        href="#why-digital-id-does-not-mean-the-same-thing-everywhere"
+                        >Why digital ID does not mean the same thing
+                        everywhere</a
+                     >
+                  </div>
+                  <div class="related">
+                     <strong>Continue exploring</strong
+                     ><a href="../../terminology/biometrics/">Biometrics →</a
+                     ><a href="../../identification/"
+                        >Identification directory →</a
+                     >
+                  </div>
+               </aside>
+            </div>
+         </section>
+      </main>
+      <footer>
+         <div class="wrap footer-grid">
+            <div class="footer-brand">
+               <img src="../../assets/logo.svg" alt="ID Encyclopedia" />
+               <div class="footer-note">
+                  An independent educational reference about identification
+                  documents, terminology, security features and history. Not a
+                  government agency.
+               </div>
+            </div>
+            <div>
+               <div class="footer-title">Explore</div>
+               <a href="../../identification/">Identification</a
+               ><a href="../../terminology/">Terminology</a
+               ><a href="../">History</a>
+            </div>
+            <div>
+               <div class="footer-title">History</div>
+               <a href="../drivers-license-history/">Driver’s licenses</a
+               ><a href="../us-identification-history/">U.S. identification</a
+               ><a href="../real-id-history/">REAL ID</a
+               ><a href="../passport-security-history/">Passport security</a
+               ><a href="../digital-identification/">Digital identification</a>
+            </div>
+            <div>
+               <div class="footer-title">Editorial note</div>
+               <div class="footer-note">
+                  Historical facts are based on linked sources. Current
+                  requirements can change, so use the relevant issuing authority
+                  for live rules.
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>

@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <title>Evolution of Passport Security | ID Encyclopedia</title>
+      <meta
+         name="description"
+         content="How passports evolved from paper travel documents into standardized machine-readable and biometric travel documents."
+      />
+      <link rel="stylesheet" href="../assets/styles.css" />
+      <style>
+         .history-article {
+            padding: 70px 0 100px;
+         }
+         .history-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 820px) 270px;
+            gap: 64px;
+            align-items: start;
+         }
+         .history-main h2 {
+            font-size: 34px;
+            line-height: 1.12;
+            letter-spacing: -0.035em;
+            margin: 52px 0 16px;
+         }
+         .history-main p {
+            font-size: 17px;
+            line-height: 1.78;
+            color: #536174;
+            margin: 0 0 18px;
+         }
+         .lead {
+            font-size: 21px !important;
+            line-height: 1.65 !important;
+            color: #26354a !important;
+         }
+         .kicker {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #315cf5;
+            margin: 10px 0 16px;
+         }
+         .kicker:before {
+            content: "";
+            width: 24px;
+            height: 2px;
+            background: #315cf5;
+         }
+         .timeline {
+            position: relative;
+            margin: 28px 0 44px;
+            padding-left: 28px;
+         }
+         .timeline:before {
+            content: "";
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            bottom: 5px;
+            width: 2px;
+            background: #dfe6f2;
+         }
+         .t-item {
+            position: relative;
+            padding: 0 0 28px;
+         }
+         .t-item:before {
+            content: "";
+            position: absolute;
+            left: -29px;
+            top: 7px;
+            width: 10px;
+            height: 10px;
+            border: 3px solid #fff;
+            border-radius: 50%;
+            background: #315cf5;
+            box-shadow: 0 0 0 2px #d7e0ff;
+         }
+         .t-year {
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            color: #315cf5;
+            margin-bottom: 5px;
+         }
+         .t-item strong {
+            display: block;
+            font-size: 18px;
+            color: #17243a;
+            margin-bottom: 5px;
+         }
+         .t-item span {
+            display: block;
+            font-size: 15px;
+            line-height: 1.65;
+            color: #637087;
+         }
+         .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+            margin: 30px 0;
+         }
+         .stat {
+            border: 1px solid #e0e6ef;
+            border-radius: 18px;
+            padding: 21px;
+            background: #fff;
+         }
+         .stat b {
+            display: block;
+            font-size: 25px;
+            letter-spacing: -0.03em;
+            color: #17243a;
+            margin-bottom: 6px;
+         }
+         .stat span {
+            font-size: 13px;
+            line-height: 1.45;
+            color: #68758a;
+         }
+         .note,
+         .source-box {
+            margin-top: 38px;
+            padding: 24px 26px;
+            border: 1px solid #dfe5ee;
+            border-radius: 18px;
+            background: #f7f9fc;
+         }
+         .note strong,
+         .source-box h3 {
+            display: block;
+            color: #17243a;
+            margin: 0 0 8px;
+         }
+         .note p {
+            font-size: 15px !important;
+            line-height: 1.65 !important;
+            margin: 0 !important;
+         }
+         .source-box a {
+            display: block;
+            color: #315cf5;
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 7px 0;
+            text-decoration: none;
+         }
+         .source-box a:hover {
+            text-decoration: underline;
+         }
+         .on-page {
+            position: sticky;
+            top: 100px;
+            border: 1px solid #e0e6ef;
+            border-radius: 18px;
+            padding: 20px;
+            background: #fff;
+         }
+         .on-page strong {
+            display: block;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #7a8799;
+            margin-bottom: 12px;
+         }
+         .on-page a,
+         .related a {
+            display: block;
+            padding: 9px 0;
+            color: #536174;
+            text-decoration: none;
+            font-size: 14px;
+            border-bottom: 1px solid #eef1f5;
+         }
+         .on-page a:hover,
+         .related a:hover {
+            color: #315cf5;
+         }
+         .related {
+            margin-top: 18px;
+            border-radius: 18px;
+            background: #17243a;
+            color: #fff;
+            padding: 22px;
+         }
+         .related strong {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 7px;
+         }
+         .related a {
+            color: #dce6ff;
+            border-bottom: 0;
+            padding: 6px 0;
+         }
+         .faq {
+            margin-top: 42px;
+         }
+         .faq details {
+            border-top: 1px solid #e0e6ef;
+            padding: 18px 0;
+         }
+         .faq summary {
+            cursor: pointer;
+            font-weight: 700;
+            color: #17243a;
+            list-style: none;
+         }
+         .faq summary::-webkit-details-marker {
+            display: none;
+         }
+         .faq p {
+            padding-top: 12px;
+            margin-bottom: 0;
+         }
+         .history-main ul {
+            padding-left: 22px;
+         }
+         .history-main li {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #536174;
+            margin: 8px 0;
+         }
+         @media (max-width: 850px) {
+            .history-layout {
+               grid-template-columns: 1fr;
+               gap: 34px;
+            }
+            .on-page {
+               position: static;
+            }
+            .stat-grid {
+               grid-template-columns: 1fr;
+            }
+            .history-main h2 {
+               font-size: 29px;
+            }
+            .history-article {
+               padding-top: 45px;
+            }
+         }
+      </style>
+   </head>
+   <body>
+      <header class="top">
+         <div class="wrap nav">
+            <a class="brand" href="../../"
+               ><img src="../../assets/logo.svg" alt="ID Encyclopedia"
+            /></a>
+            <nav class="menu">
+               <a href="../../">Home</a
+               ><a href="../../identification/">Identification</a
+               ><a href="../../terminology/">Terminology</a
+               ><a class="active" href="../">History</a>
+            </nav>
+            <div class="nav-search">
+               <span>⌕</span><span>Search the encyclopedia</span>
+            </div>
+            <div class="mobile">☰</div>
+         </div>
+      </header>
+      <main>
+         <div class="wrap">
+            <div class="breadcrumb">
+               <a href="../../">Home</a><span> / </span><a href="../">History</a
+               ><span> / </span>Evolution of Passport Security
+            </div>
+         </div>
+         <section class="page-hero">
+            <div class="wrap">
+               <div class="eyebrow">History / Passport security</div>
+               <h1>Evolution of Passport Security</h1>
+               <p>
+                  Passport security has evolved alongside international travel.
+                  As passenger volumes increased, countries moved toward
+                  standardized formats, machine-readable data and eventually
+                  electronic documents with biometric capabilities.
+               </p>
+            </div>
+         </section>
+         <section class="history-article">
+            <div class="wrap history-layout">
+               <article class="history-main">
+                  <p class="lead">
+                     Modern passports are not secured by one feature. Their
+                     security comes from a combination of document design,
+                     personalization methods, machine-readable data, electronic
+                     components and issuance controls. International standards
+                     have helped countries make travel documents more
+                     interoperable while allowing individual governments to
+                     choose their own designs.
+                  </p>
+                  <div class="stat-grid">
+                     <div class="stat">
+                        <b>1980</b
+                        ><span
+                           >ICAO MRP specification<br />First published
+                           machine-readable passport specifications</span
+                        >
+                     </div>
+                     <div class="stat">
+                        <b>1985</b
+                        ><span
+                           >ISO standard<br />Machine-readable passport
+                           specifications adopted as an ISO standard</span
+                        >
+                     </div>
+                     <div class="stat">
+                        <b>2021</b
+                        ><span
+                           >U.S. NGP<br />Next Generation Passport
+                           introduced</span
+                        >
+                     </div>
+                  </div>
+                  <div class="kicker">Timeline</div>
+                  <div class="timeline">
+                     <div class="t-item">
+                        <div class="t-year">1914</div>
+                        <strong>U.S. passport standardization era</strong
+                        ><span
+                           >The U.S. moved toward a standardized passport
+                           booklet format around this period, with later changes
+                           driven by travel volume and international
+                           standards.</span
+                        >
+                     </div>
+                     <div class="t-item">
+                        <div class="t-year">1968</div>
+                        <strong>ICAO begins machine-readable work</strong
+                        ><span
+                           >ICAO considered machine-readable passports and
+                           passport cards as international air travel
+                           expanded.</span
+                        >
+                     </div>
+                     <div class="t-item">
+                        <div class="t-year">1980</div>
+                        <strong>First ICAO MRP specifications</strong
+                        ><span
+                           >ICAO published its first specifications for a
+                           passport with machine-readable capability.</span
+                        >
+                     </div>
+                     <div class="t-item">
+                        <div class="t-year">1985</div>
+                        <strong>ISO standardization</strong
+                        ><span
+                           >The machine-readable passport specifications were
+                           further developed through ISO work and adopted as an
+                           international standard.</span
+                        >
+                     </div>
+                     <div class="t-item">
+                        <div class="t-year">1990s–2000s</div>
+                        <strong>Biometrics enter the standards</strong
+                        ><span
+                           >ICAO expanded its work to biometric travel documents
+                           and storage of biometric data in contactless
+                           integrated circuits.</span
+                        >
+                     </div>
+                     <div class="t-item">
+                        <div class="t-year">2000s</div>
+                        <strong>Electronic passports spread</strong
+                        ><span
+                           >Countries began issuing ePassports containing
+                           contactless chips and standardized electronic data
+                           supported by ICAO specifications.</span
+                        >
+                     </div>
+                     <div class="t-item">
+                        <div class="t-year">2021</div>
+                        <strong>U.S. Next Generation Passport</strong
+                        ><span
+                           >The State Department began issuing the Next
+                           Generation Passport with a polycarbonate data page,
+                           laser engraving and other security features.</span
+                        >
+                     </div>
+                  </div>
+                  <div class="kicker">The story</div>
+                  <h2 id="why-passports-needed-standardization">
+                     Why passports needed standardization
+                  </h2>
+                  <p>
+                     International travel crosses borders between different
+                     governments and inspection systems. ICAO’s machine-readable
+                     travel document standards created a common technical
+                     foundation for passports and related documents.
+                  </p>
+                  <h2 id="the-mrz-changed-how-passports-are-processed">
+                     The MRZ changed how passports are processed
+                  </h2>
+                  <p>
+                     A machine-readable zone puts standardized identity data
+                     into a format optical readers can process. It complements
+                     the visual inspection of the document.
+                  </p>
+                  <h2 id="from-printed-security-to-electronic-security">
+                     From printed security to electronic security
+                  </h2>
+                  <p>
+                     This is also why visual resemblance should not be confused
+                     with legal authenticity. For a practical consumer-facing
+                     discussion of how counterfeit identification can differ from
+                     genuine credentials, <a href="https://www.fakeids.com/blog/how-to-tell-if-an-id-is-fake/">FakeIDs.com’s guide to spotting fake identification</a> looks at
+                     the visible and machine-readable parts of an ID.
+                  </p>
+                  <p>
+                     Modern passports use layers that can include specialized
+                     materials, printing techniques, optically variable
+                     features, personalization methods and, for electronic
+                     passports, a contactless chip. The exact combination
+                     differs by issuing authority.
+                  </p>
+                  <h2 id="biometrics-added-another-layer">
+                     Biometrics added another layer
+                  </h2>
+                  <p>
+                     Electronic passports can store biometric information in a
+                     contactless integrated circuit. ICAO Doc 9303 covers
+                     biometrics, data structures, security mechanisms and
+                     public-key infrastructure for machine-readable travel
+                     documents.
+                  </p>
+                  <h2 id="the-u-s-next-generation-passport">
+                     The U.S. Next Generation Passport
+                  </h2>
+                  <p>
+                     The State Department says the U.S. began issuing the Next
+                     Generation Passport in 2021. Its polycarbonate data page,
+                     laser engraving, security fibers and other features are
+                     part of the document’s security design.
+                  </p>
+                  <div class="note">
+                     <strong>Why this history matters</strong>
+                     <p>
+                        Historical context helps explain why today’s
+                        identification documents contain particular fields,
+                        security features and standards. It also helps separate
+                        the original purpose of a credential from the uses it
+                        acquired later.
+                     </p>
+                  </div>
+                  <section class="faq">
+                     <div class="kicker">Common questions</div>
+                     <h2>What people usually want to know</h2>
+                     <details>
+                        <summary>What is the MRZ on a passport?</summary>
+                        <p>
+                           The machine-readable zone is the standardized area of
+                           characters on a travel document that optical systems
+                           can read. It contains structured identity and
+                           document information.
+                        </p>
+                     </details>
+                     <details>
+                        <summary>
+                           Do all passports have the same security features?
+                        </summary>
+                        <p>
+                           No. Countries follow international standards for
+                           interoperability but can use different materials,
+                           artwork, personalization methods and additional
+                           security features.
+                        </p>
+                     </details>
+                     <details>
+                        <summary>What makes an ePassport different?</summary>
+                        <p>
+                           An ePassport includes a contactless integrated
+                           circuit that stores standardized electronic data.
+                           ICAO standards cover how that data and associated
+                           security mechanisms work.
+                        </p>
+                     </details>
+                  </section>
+                  <div class="source-box">
+                     <h3>Sources &amp; further reading</h3>
+                     <a
+                        href="https://www.icao.int/sites/default/files/postalhistory/annex_9_facilitation_of_international_air_transport.htm"
+                        target="_blank"
+                        rel="noopener"
+                        >ICAO — History of Machine Readable Travel Documents
+                        ↗</a
+                     ><a
+                        href="https://www.icao.int/publications/doc-series/doc-9303"
+                        target="_blank"
+                        rel="noopener"
+                        >ICAO — Doc 9303 Machine Readable Travel Documents ↗</a
+                     ><a
+                        href="https://travel.state.gov/en/passports/apply/help/security-design.html"
+                        target="_blank"
+                        rel="noopener"
+                        >U.S. Department of State — Design and Security of Our
+                        Documents ↗</a
+                     >
+                  </div>
+               </article>
+               <aside>
+                  <div class="on-page">
+                     <strong>On this page</strong
+                     ><a href="#why-passports-needed-standardization"
+                        >Why passports needed standardization</a
+                     ><a href="#the-mrz-changed-how-passports-are-processed"
+                        >The MRZ changed how passports are processed</a
+                     ><a href="#from-printed-security-to-electronic-security"
+                        >From printed security to electronic security</a
+                     ><a href="#biometrics-added-another-layer"
+                        >Biometrics added another layer</a
+                     ><a href="#the-u-s-next-generation-passport"
+                        >The U.S. Next Generation Passport</a
+                     >
+                  </div>
+                  <div class="related">
+                     <strong>Continue exploring</strong
+                     ><a href="../../terminology/">ID terminology →</a
+                     ><a href="../../identification/"
+                        >Identification directory →</a
+                     >
+                  </div>
+               </aside>
+            </div>
+         </section>
+      </main>
+      <footer>
+         <div class="wrap footer-grid">
+            <div class="footer-brand">
+               <img src="../../assets/logo.svg" alt="ID Encyclopedia" />
+               <div class="footer-note">
+                  An independent educational reference about identification
+                  documents, terminology, security features and history. Not a
+                  government agency.
+               </div>
+            </div>
+            <div>
+               <div class="footer-title">Explore</div>
+               <a href="../../identification/">Identification</a
+               ><a href="../../terminology/">Terminology</a
+               ><a href="../">History</a>
+            </div>
+            <div>
+               <div class="footer-title">History</div>
+               <a href="../drivers-license-history/">Driver’s licenses</a
+               ><a href="../us-identification-history/">U.S. identification</a
+               ><a href="../real-id-history/">REAL ID</a
+               ><a href="../passport-security-history/">Passport security</a
+               ><a href="../digital-identification/">Digital identification</a>
+            </div>
+            <div>
+               <div class="footer-title">Editorial note</div>
+               <div class="footer-note">
+                  Historical facts are based on linked sources. Current
+                  requirements can change, so use the relevant issuing authority
+                  for live rules.
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>
